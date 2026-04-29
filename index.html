@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bora Ecevit | Yatırım Danışmanlığı</title>
+    <title>Bora Ecevit | Finansal Okuryazarlık ve Strateji Mentorluğu</title>
     <meta
       name="description"
-      content="Borsa, teknik analiz ve para yönetimi alanlarında profesyonel yatırım danışmanlığı."
+      content="Teknik analiz metodolojileri, algoritmik strateji modellemeleri ve risk disiplini eğitimi."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,74 +18,118 @@
   </head>
   <body>
     <header class="site-header">
+      <div class="institutional-top-bar" aria-label="Kurumsal üst bant">
+        <div class="container top-bar-wrap">
+          <div class="top-bar-market">
+            <span id="bist-dot" class="market-dot closed" aria-hidden="true"></span>
+            <span id="bist-status-text">BIST: KAPALI</span>
+          </div>
+          <div class="top-bar-right">
+            <span class="clock-item top-bar-hide-mobile" id="clock-ny"><span class="clock-city">NY</span> <span class="clock-time">--:--:--</span></span>
+            <span class="clock-item top-bar-hide-mobile" id="clock-lon"><span class="clock-city">LON</span> <span class="clock-time">--:--:--</span></span>
+            <span class="clock-item" id="clock-ist"><span class="clock-city">IST</span> <span class="clock-time">--:--:--</span></span>
+          </div>
+        </div>
+      </div>
       <div class="container nav-wrap">
         <a href="#" class="brand">BoraEcevit<span>.com</span></a>
         <nav class="nav-links">
-          <a href="#services" data-i18n="nav.services">Hizmetler</a>
-          <a href="#about" data-i18n="nav.about">Hakkımda</a>
-          <a href="#approach" data-i18n="nav.approach">Yaklaşım</a>
-          <a href="#contact" data-i18n="nav.contact">İletişim</a>
+          <a href="#services" data-i18n="nav.services">Stratejiler</a>
+          <a href="#about" data-i18n="nav.about">Deneyim</a>
+          <a href="#approach" data-i18n="nav.approach">Metodoloji</a>
+          <a href="#contact" data-i18n="nav.contact">Ofis</a>
         </nav>
+        <a class="btn member-btn" href="https://members.boraecevit.com/uye-giris" target="_blank" rel="noopener noreferrer" data-i18n="nav.memberCta">Panel Girişi</a>
         <div class="lang-switch" role="group" aria-label="Language switch">
           <button id="lang-tr" class="lang-btn active" data-lang="tr">TR</button>
+          <span class="lang-separator">|</span>
           <button id="lang-en" class="lang-btn" data-lang="en">EN</button>
         </div>
       </div>
     </header>
 
     <main>
+      <section class="member-strip">
+        <div class="container member-strip-wrap">
+          <div>
+            <p class="member-strip-title" data-i18n="member.title">Davet Tabanlı Sayısal Strateji Paneli</p>
+            <p class="member-strip-text" data-i18n="member.text">
+              Bu platform kapalı erişim modeliyle çalışır. Giriş bilgileriniz tarafımızca oluşturulur ve yetkilendirilen kullanıcılara özel olarak iletilir.
+            </p>
+          </div>
+          <div class="member-strip-actions">
+            <a class="btn primary" href="https://members.boraecevit.com/uye-giris" target="_blank" rel="noopener noreferrer" data-i18n="member.login">Panel Girişi</a>
+          </div>
+        </div>
+      </section>
+
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow" data-i18n="hero.eyebrow">Profesyonel Yatırım Danışmanlığı</p>
-            <h1 data-i18n="hero.title">
-              Disiplinli analiz, kontrollü risk, sürdürülebilir yatırım yaklaşımı.
+            <p class="eyebrow" data-i18n="hero.eyebrow">STRATEJİK ANALİZ VE SAYISAL MODELLEME OFİSİ</p>
+            <h1 data-i18n-html="hero.title">
+              Finansal piyasalarda <span class="hero-highlight">matematiksel disiplin</span> ve <span class="hero-highlight">yüksek teknoloji</span>.
             </h1>
             <p class="hero-text" data-i18n="hero.text">
-              Borsa, teknik analiz ve para yönetimi odaklı danışmanlık hizmeti ile
-              yatırım kararlarınızı veri, strateji ve risk yönetimi temelli şekilde
-              destekliyorum.
+              Piyasa dinamiklerini veri odaklı analiz eden, kural tabanlı işlem
+              modelleri ve ileri seviye risk yönetim disiplini üzerine inşa edilmiş
+              profesyonel bir ekosistem.
             </p>
             <div class="hero-actions">
               <a href="#contact" class="btn primary" data-i18n="hero.ctaPrimary">Görüşme Talep Et</a>
               <a href="#services" class="btn secondary" data-i18n="hero.ctaSecondary">Hizmetleri İncele</a>
             </div>
+            <p class="hero-trust-note" data-i18n="hero.trustNote">2012'den bu yana, piyasa tecrübesi ve teknolojik inovasyonun buluşma noktası.</p>
           </div>
           <aside class="hero-card">
             <p class="card-label" data-i18n="hero.cardLabel">Odak Alanları</p>
             <ul>
-              <li data-i18n="hero.focus1">Borsa ve Piyasa Analizi</li>
-              <li data-i18n="hero.focus2">Teknik Analiz Stratejileri</li>
-              <li data-i18n="hero.focus3">Portföy ve Para Yönetimi</li>
-              <li data-i18n="hero.focus4">Risk Kontrol Disiplini</li>
+              <li class="focus-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16v2H2V4h2v14zm4-3l3.2-4.2 2.8 2.8L20 6l1.4 1.4-7.4 9.2-2.9-2.9L9.6 16 8 15z"/></svg>
+                <span data-i18n="hero.focus1">Piyasa Mikroyapı Dekodajı</span>
+              </li>
+              <li class="focus-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 4v10l-7 4-7-4V7l7-4zm0 2.3L7 8v8l5 2.9 5-2.9V8l-5-2.7zM9 10h6v2H9v-2zm0 3h4v2H9v-2z"/></svg>
+                <span data-i18n="hero.focus2">Sayısal Strateji Mühendisliği</span>
+              </li>
+              <li class="focus-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5.3-3.4 10.1-8 11-4.6-.9-8-5.7-8-11V5l8-3zm0 2.1L6 6.3V11c0 4.2 2.5 8.1 6 9 3.5-.9 6-4.8 6-9V6.3l-6-2.2z"/></svg>
+                <span data-i18n="hero.focus3">Sermaye Koruma ve Risk Mimarisi</span>
+              </li>
+              <li class="focus-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 108 8h-2a6 6 0 11-6-6V4zm1 1v7h6A7 7 0 0013 5z"/></svg>
+                <span data-i18n="hero.focus4">Davranışsal ve Operasyonel Disiplin</span>
+              </li>
             </ul>
           </aside>
         </div>
       </section>
-
       <section id="services" class="section">
         <div class="container">
           <h2 data-i18n="services.title">Hizmetler</h2>
           <div class="cards">
             <article class="card">
-              <h3 data-i18n="services.s1.title">Borsa Danışmanlığı</h3>
+              <h3 data-i18n="services.s1.title">Algoritmik Sistem Tasarımı</h3>
               <p data-i18n="services.s1.text">
-                Sektör ve hisse bazlı değerlendirmelerle, yatırım hedefinize uygun
-                piyasa perspektifi sunulur.
+                Fiyat hareketlerini istatistiksel verilere dayandıran, duygudan
+                arındırılmış ve tamamen kural setlerine bağlı çalışan özel yazılım
+                çözümleri ve optimizasyon süreçleri.
               </p>
             </article>
             <article class="card">
-              <h3 data-i18n="services.s2.title">Teknik Analiz</h3>
+              <h3 data-i18n="services.s2.title">İleri Seviye Teknik Analiz</h3>
               <p data-i18n="services.s2.text">
-                Trend, destek-direnç, hacim ve formasyon odaklı teknik çerçeve ile
-                giriş-çıkış planları oluşturulur.
+                Kurumsal piyasa yapılarını (Institutional Order Flow) ve fiyatın
+                likidite dinamiklerini temel alan, ileri düzey teknik modelleme
+                eğitimleri.
               </p>
             </article>
             <article class="card">
-              <h3 data-i18n="services.s3.title">Para Yönetimi</h3>
+              <h3 data-i18n="services.s3.title">Risk ve Para Yönetimi</h3>
               <p data-i18n="services.s3.text">
-                Sermaye koruması, pozisyon boyutlandırma ve risk/ödül dengesi
-                prensipleri ile sürdürülebilir sistem hedeflenir.
+                Sermaye sürdürülebilirliği için matematiksel kasa yönetimi, dinamik
+                pozisyon büyüklüğü hesaplama ve portföy riskini minimize eden
+                disiplin modelleri.
               </p>
             </article>
           </div>
@@ -95,52 +139,105 @@
       <section id="about" class="section section-alt">
         <div class="container narrow">
           <h2 data-i18n="about.title">Hakkımda</h2>
-          <p data-i18n="about.text">
-            Bora Ecevit olarak, yatırımcılara kısa vadeli piyasa gürültüsünden
-            uzak, planlı ve ölçülebilir bir yaklaşım geliştirmeleri için danışmanlık
-            sağlıyorum. Amacım, yatırım kararlarını net bir metodoloji ile
-            güçlendirmek ve risk yönetimini sürecin merkezine yerleştirmektir.
+          <p class="about-subtitle" data-i18n="about.subtitle">
+            Piyasanın İçinden, Teknolojinin Geleceğine
+          </p>
+          <p data-i18n="about.intro">
+            2012 yılından bugüne süregelen, borsa koridorlarından algoritmaların
+            hızına uzanan bir serüven.
+          </p>
+          <p data-i18n="about.p1">
+            Finansal piyasalarla 2012 yılında tanıştığım günden beri, piyasayı sadece
+            ekran başındaki rakamlardan değil, bizzat onu şekillendiren dinamiklerin
+            içinden gözlemledim. Geçen bu yıllar boyunca piyasa profesyonelleri,
+            deneyimli spekülatörler ve sektörün önde gelen isimleriyle kurduğum
+            dostluklar, bana kitaplarda yazmayan bir tecrübe kazandırdı.
+          </p>
+          <h3 class="about-block-title" data-i18n="about.block1Title">Mutfağın İçinden Gelen Analiz Gücü</h3>
+          <p data-i18n="about.p2">
+            Piyasanın en usta teknik analiz üstatlarından aldığım derinlemesine
+            eğitimleri, yıllar içinde kendi geliştirdiğim özgün modellerle
+            harmanladım. Sadece grafik okumayı değil; tahta yapıcı davranışlarını,
+            spekülatif hareketlerin arkasındaki psikolojiyi ve piyasa dinamiklerini
+            bir sosyolog gözüyle analiz etmeyi öğrendim.
+          </p>
+          <h3 class="about-block-title" data-i18n="about.block2Title">Teknoloji ve Strateji: BoraEcevit-ALGO</h3>
+          <ul class="about-list">
+            <li data-i18n="about.item1">Algoritmik Sistemler: Duygulardan arındırılmış, kural tabanlı ve disiplinli işlem modelleri.</li>
+            <li data-i18n="about.item2">İndikatör Mühendisliği: Piyasanın gürültüsünü filtreleyen, strateji odaklı teknik araçlar.</li>
+            <li data-i18n="about.item3">Seçici Hisse Analizi: Tahta dinamiklerini ve temel verileri teknolojiyle süzerek yapılan stratejik seçimler.</li>
+          </ul>
+          <h3 class="about-block-title" data-i18n="about.block3Title">Vizyonum: Disiplin ve Şeffaflık</h3>
+          <p data-i18n="about.p3">
+            Piyasada küçük yatırımcının korunması ve finansal okuryazarlığın etik
+            değerlerle birleşmesi en büyük önceliğimdir.
           </p>
         </div>
       </section>
 
       <section id="approach" class="section">
         <div class="container">
-          <h2 data-i18n="approach.title">Çalışma Yaklaşımı</h2>
+          <h2 data-i18n="approach.title">Operasyonel Metodoloji</h2>
           <div class="steps">
             <div class="step">
               <span>01</span>
-              <h3 data-i18n="approach.a1.title">Hedef Analizi</h3>
-              <p data-i18n="approach.a1.text">Yatırım süresi, risk algısı ve beklentiler netleştirilir.</p>
+              <h3 data-i18n="approach.a1.title">Piyasa Mikroyapı Analizi</h3>
+              <p data-i18n="approach.a1.text">Makro veriler ve tahta yapıcı (market maker) davranışları üzerinden piyasa likiditesinin ve akümülasyon bölgelerinin analizi. Arz-talep dengesizliklerinin sayısal tespiti.</p>
             </div>
             <div class="step">
               <span>02</span>
-              <h3 data-i18n="approach.a2.title">Strateji Tasarımı</h3>
-              <p data-i18n="approach.a2.text">Teknik analiz ve para yönetimi prensiplerine göre plan hazırlanır.</p>
+              <h3 data-i18n="approach.a2.title">Sayısal Strateji ve Algoritmik Modelleme</h3>
+              <p data-i18n="approach.a2.text">İleri düzey teknik analiz metodolojilerinin, kural tabanlı algoritmik sistemlere dönüştürülmesi. Geçmiş veri simülasyonları (backtest) ile strateji optimizasyonu.</p>
             </div>
             <div class="step">
               <span>03</span>
-              <h3 data-i18n="approach.a3.title">Düzenli Değerlendirme</h3>
-              <p data-i18n="approach.a3.text">Piyasa koşullarına göre strateji gözden geçirilir ve optimize edilir.</p>
+              <h3 data-i18n="approach.a3.title">Dinamik Risk ve Portföy Disiplini</h3>
+              <p data-i18n="approach.a3.text">Değişen piyasa korelasyonlarına göre risk parametrelerinin anlık güncellenmesi. Sermaye koruma odaklı, dinamik pozisyon yönetimi ve performans denetimi.</p>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container narrow">
+          <h2 class="vision-title" data-i18n="vision.title">Piyasa Vizyonu</h2>
+          <section class="vision-card" aria-label="Piyasa Vizyonu">
+            <p class="vision-lead" data-i18n="vision.lead">
+              Benim için borsa; sadece bir alım-satım platformu değil, doğru strateji
+              ve çelik gibi bir iradeyle yönetilmesi gereken bir matematiksel
+              sanattır.
+            </p>
+            <p class="vision-detail" data-i18n="vision.detail">
+              Fiyat her şeyi içerir; ancak algoritmalar niyetleri deşifre eder. Biz,
+              piyasadaki gürültünün içindeki gerçek sinyali trade ediyoruz.
+            </p>
+            <span class="vision-signature">Bora Ecevit</span>
+          </section>
         </div>
       </section>
 
       <section id="contact" class="section section-alt">
         <div class="container contact-wrap">
           <div>
-            <h2 data-i18n="contact.title">İletişim</h2>
+            <h2 data-i18n="contact.title">Stratejik İletişim Hattı</h2>
             <p data-i18n="contact.text">
-              Danışmanlık süreci hakkında bilgi almak için aşağıdaki kanallardan
-              iletişime geçebilirsiniz.
+              Kurumsal iş birlikleri, algoritmik modelleme projeleri veya üst düzey
+              finansal disiplin mentorluğu için doğrudan iletişim kurabilirsiniz.
+              Talepleriniz, piyasa yoğunluğu dikkate alınarak en kısa sürede
+              değerlendirilecektir.
             </p>
+            <h3 class="about-block-title" data-i18n="contact.channelsTitle">Resmi Kanallar</h3>
             <ul class="contact-list">
-              <li><strong>Email:</strong> <a href="mailto:info@boraecevit.com">info@boraecevit.com</a></li>
-              <li><strong>Telefon:</strong> <a href="tel:+905551112233">+90 555 111 22 33</a></li>
+              <li><strong>X:</strong> <a href="https://x.com/boraecevitborsa" target="_blank" rel="noopener noreferrer">@boraecevitborsa</a></li>
+              <li><strong>E-posta:</strong> <a href="mailto:info@boraecevit.com">info@boraecevit.com</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/905472991993" target="_blank" rel="noopener noreferrer">+90 547 299 19 93</a></li>
             </ul>
           </div>
-          <form class="contact-form" action="mailto:info@boraecevit.com" method="post" enctype="text/plain">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/xvzdeazd"
+            method="POST"
+          >
             <label>
               <span data-i18n="contact.form.name">Ad Soyad</span>
               <input type="text" name="name" required />
@@ -153,21 +250,72 @@
               <span data-i18n="contact.form.message">Mesaj</span>
               <textarea name="message" rows="5" required></textarea>
             </label>
-            <button type="submit" class="btn primary" data-i18n="contact.form.submit">Mesaj Gönder</button>
+            <input type="hidden" name="_subject" value="Web Sitesi Yeni İletişim Talebi" />
+            <button type="submit" class="btn submit-gold" data-i18n="contact.form.submit">Talebi İlet</button>
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p>© <span id="year"></span> BoraEcevit.com</p>
-        <p data-i18n="footer.disclaimer">
-          Not: Bu sitedeki bilgiler genel bilgilendirme amaçlıdır ve yatırım
-          tavsiyesi kapsamında değerlendirilmemelidir.
-        </p>
+      <div class="container footer-upper">
+        <div class="footer-col">
+          <p class="footer-logo">BoraEcevit<span>.com</span></p>
+          <p class="footer-vision">Piyasa zekasını disiplinli strateji ve veri odaklı metodoloji ile birleştiren profesyonel ekosistem.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Hızlı Linkler</h4>
+          <nav class="footer-links" aria-label="Footer hızlı linkler">
+            <a href="#services">Stratejiler</a>
+            <a href="#about">Deneyim</a>
+            <a href="#approach">Metodoloji</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Resmi Kanallar</h4>
+          <div class="footer-socials" aria-label="Resmi iletişim kanalları">
+            <a href="https://x.com/boraecevitborsa" target="_blank" rel="noopener noreferrer" aria-label="X profili">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2h3.308l-7.227 8.26L23 22h-6.74l-5.284-6.907L4.93 22H1.62l7.73-8.835L1 2h6.911l4.777 6.231L18.244 2zm-1.161 18h1.833L6.915 3.895H4.95L17.083 20z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/905472991993" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişim">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.52 3.48A11.94 11.94 0 0012.04 0C5.4 0 .02 5.39.02 12.03c0 2.12.56 4.2 1.62 6.03L0 24l6.1-1.6a12.02 12.02 0 005.94 1.52h.01c6.63 0 12.02-5.4 12.02-12.03 0-3.21-1.25-6.23-3.55-8.41zm-8.48 18.4h-.01a9.98 9.98 0 01-5.08-1.39l-.36-.21-3.62.95.97-3.53-.24-.36a9.94 9.94 0 01-1.54-5.32c0-5.5 4.47-9.97 9.98-9.97 2.66 0 5.15 1.03 7.03 2.9a9.9 9.9 0 012.93 7.05c0 5.5-4.48 9.98-9.99 9.98zm5.47-7.48c-.3-.15-1.77-.87-2.05-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.23-.65.08-.3-.15-1.26-.47-2.41-1.5-.89-.8-1.49-1.8-1.67-2.1-.18-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.68-1.63-.93-2.24-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.5s1.08 2.89 1.23 3.1c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.12-.27-.2-.57-.35z"/>
+              </svg>
+            </a>
+            <a href="mailto:info@boraecevit.com" aria-label="E-posta gonder">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.75L4.5 7.5V17h15V7.5L12 12.75zm6.74-5.75H5.26L12 11.75 18.74 7z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-lower">
+        <div class="container">
+          <p class="footer-executive">Disiplin, veriden daha keskindir. Finansal geleceğinizi şansa değil, stratejiye emanet edin.</p>
+          <p class="footer-legal-title">Yasal Deklarasyon</p>
+          <p class="footer-legal" data-i18n="footer.disclaimer">
+            Bu platformda yer alan her türlü içerik, analiz ve algoritmik modelleme; kişisel görüşler ve teknik eğitim materyalleri kapsamında sunulmaktadır. 6362 sayılı Sermaye Piyasası Kanunu uyarınca "Yatırım Danışmanlığı" teşkil etmez. Finansal kararlarınızı almadan önce yetkili kuruluşlardan profesyonel destek almanız önerilir. Tüm hakları saklıdır © 2026.
+          </p>
+          <p class="footer-copy">© <span id="year"></span> BoraEcevit.com</p>
+        </div>
       </div>
     </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/905472991993?text=Merhaba%20Bora%20Bey%2C%20finansal%20egitim%20ve%20strateji%20icerikleriniz%20hakkinda%20bilgi%20almak%20istiyorum."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp ile iletişime geç"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.52 3.48A11.94 11.94 0 0012.04 0C5.4 0 .02 5.39.02 12.03c0 2.12.56 4.2 1.62 6.03L0 24l6.1-1.6a12.02 12.02 0 005.94 1.52h.01c6.63 0 12.02-5.4 12.02-12.03 0-3.21-1.25-6.23-3.55-8.41zm-8.48 18.4h-.01a9.98 9.98 0 01-5.08-1.39l-.36-.21-3.62.95.97-3.53-.24-.36a9.94 9.94 0 01-1.54-5.32c0-5.5 4.47-9.97 9.98-9.97 2.66 0 5.15 1.03 7.03 2.9a9.9 9.9 0 012.93 7.05c0 5.5-4.48 9.98-9.99 9.98zm5.47-7.48c-.3-.15-1.77-.87-2.05-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.23-.65.08-.3-.15-1.26-.47-2.41-1.5-.89-.8-1.49-1.8-1.67-2.1-.18-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.68-1.63-.93-2.24-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.5s1.08 2.89 1.23 3.1c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.12-.27-.2-.57-.35z"/>
+      </svg>
+    </a>
 
     <script src="script.js"></script>
   </body>
