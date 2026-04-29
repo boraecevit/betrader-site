@@ -3,7 +3,7 @@ const translations = {
     "nav.services": "Stratejiler",
     "nav.about": "Deneyim",
     "nav.approach": "Metodoloji",
-    "nav.contact": "Ofis",
+    "nav.contact": "İletişim",
     "nav.memberCta": "Panel Girişi",
     "member.title": "Davet Tabanlı Sayısal Strateji Paneli",
     "member.text":
@@ -77,7 +77,7 @@ const translations = {
     "nav.services": "Strategies",
     "nav.about": "Experience",
     "nav.approach": "Methodology",
-    "nav.contact": "Office",
+    "nav.contact": "Contact",
     "nav.memberCta": "Panel Access",
     "member.title": "Invitation-Only Quant Strategy Panel",
     "member.text":
