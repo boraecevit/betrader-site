@@ -1,12 +1,11 @@
 type LoginPageProps = {
-  searchParams: Promise<{ error?: string; reason?: string }>;
+  searchParams: Promise<{ error?: string }>;
 };
 
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const params = await searchParams;
   const hasError = params.error === "auth";
   const isUnauthorized = params.error === "unauthorized";
-  const reason = params.reason;
 
   return (
     <main className="auth-shell">
@@ -32,11 +31,6 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
         {hasError && (
           <p style={{ color: "#fca5a5", marginTop: 12 }}>
             Giriş bilgileri geçersiz. Lütfen tekrar deneyin.
-          </p>
-        )}
-        {hasError && reason && (
-          <p style={{ color: "#fbbf24", marginTop: 8, fontSize: 13 }}>
-            Teknik detay: {reason}
           </p>
         )}
         {isUnauthorized && (
