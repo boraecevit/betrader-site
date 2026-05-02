@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Strateji Kütüphanesi"
+};
+
 const files = [
   {
     name: "Bora Ecevit - BETrader ALGO & V6 Terminali.pdf",

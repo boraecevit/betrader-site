@@ -1,5 +1,9 @@
 import { CodeBlock } from "@/components/code-block";
 
+export const metadata = {
+  title: "BETrader ALGO & V6"
+};
+
 const pineCode = `//@version=5
 strategy("BETrader V6 Skeleton", overlay=true, initial_capital=100000)
 emaFast = ta.ema(close, 21)

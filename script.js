@@ -1,3 +1,9 @@
+/** WhatsApp deep links: prefilled message switches with language (TR / EN). */
+const WHATSAPP_MEETING_URL = {
+  tr: "https://wa.me/905472991993?text=Merhaba,%20stratejik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20BE-ALGO%20terminali%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum",
+  en: "https://wa.me/905472991993?text=Hello,%20I%20would%20like%20to%20request%20a%20meeting%20regarding%20strategic%20consultancy%20and%20the%20BE-ALGO%20terminal"
+};
+
 const translations = {
   tr: {
     "nav.services": "Stratejiler",
@@ -10,7 +16,7 @@ const translations = {
       "Bu platform kapalı erişim modeliyle çalışır. Giriş bilgileriniz tarafımızca oluşturulur ve yetkilendirilen kullanıcılara özel olarak iletilir.",
     "member.register": "Üye Ol",
     "member.login": "Panel Girişi",
-    "hero.eyebrow": "STRATEJİK ANALİZ VE SAYISAL MODELLEME OFİSİ",
+    "hero.eyebrow": "STRATEJİK ANALİZ VE SAYISAL MODELLEME TERMİNALİ",
     "hero.title": "Finansal piyasalarda <span class='hero-highlight'>matematiksel disiplin</span> ve <span class='hero-highlight'>yüksek teknoloji</span>.",
     "hero.text":
       "Piyasa dinamiklerini veri odaklı analiz eden, kural tabanlı işlem modelleri ve ileri seviye risk yönetim disiplini üzerine inşa edilmiş profesyonel bir ekosistem.",
@@ -41,10 +47,13 @@ const translations = {
     "about.block1Title": "Mutfağın İçinden Gelen Analiz Gücü",
     "about.p2":
       "Piyasanın en usta teknik analiz üstatlarından aldığım derinlemesine eğitimleri, yıllar içinde kendi geliştirdiğim özgün modellerle harmanladım. Sadece grafik okumayı değil; tahta yapıcı davranışlarını, spekülatif hareketlerin arkasındaki psikolojiyi ve piyasa dinamiklerini bir sosyolog gözüyle analiz etmeyi öğrendim.",
-    "about.block2Title": "Teknoloji ve Strateji: BoraEcevit-ALGO",
-    "about.item1": "Algoritmik Sistemler: Duygulardan arındırılmış, kural tabanlı ve disiplinli işlem modelleri.",
-    "about.item2": "İndikatör Mühendisliği: Piyasanın gürültüsünü filtreleyen, strateji odaklı teknik araçlar.",
-    "about.item3": "Seçici Hisse Analizi: Tahta dinamiklerini ve temel verileri teknolojiyle süzerek yapılan stratejik seçimler.",
+    "about.block2Title": "Teknoloji ve Strateji: BoraEcevit-BETRADER",
+    "about.item1":
+      "<strong class='about-item-lead'>Algoritmik Sistemler:</strong> Duygulardan arındırılmış, kural tabanlı ve disiplinli işlem modelleri.",
+    "about.item2":
+      "<strong class='about-item-lead'>İndikatör Mühendisliği:</strong> Piyasanın gürültüsünü filtreleyen, strateji odaklı teknik araçlar.",
+    "about.item3":
+      "<strong class='about-item-lead'>Seçici Hisse Analizi:</strong> Tahta dinamiklerini ve temel verileri teknolojiyle süzerek yapılan stratejik seçimler.",
     "about.block3Title": "Vizyonum: Disiplin ve Şeffaflık",
     "about.p3":
       "Piyasada küçük yatırımcının korunması ve finansal okuryazarlığın etik değerlerle birleşmesi en büyük önceliğimdir.",
@@ -71,7 +80,13 @@ const translations = {
     "vision.detail":
       "Fiyat her şeyi içerir; ancak algoritmalar niyetleri deşifre eder. Biz, piyasadaki gürültünün içindeki gerçek sinyali trade ediyoruz.",
     "footer.disclaimer":
-      "Bu platformda yer alan her türlü içerik, analiz ve algoritmik modelleme; kişisel görüşler ve teknik eğitim materyalleri kapsamında sunulmaktadır. 6362 sayılı Sermaye Piyasası Kanunu uyarınca 'Yatırım Danışmanlığı' teşkil etmez. Finansal kararlarınızı almadan önce yetkili kuruluşlardan profesyonel destek almanız önerilir. Tüm hakları saklıdır © 2026."
+      "Bu platformda yer alan her türlü içerik, analiz ve algoritmik modelleme; kişisel görüşler ve teknik eğitim materyalleri kapsamında sunulmaktadır. 6362 sayılı Sermaye Piyasası Kanunu uyarınca 'Yatırım Danışmanlığı' teşkil etmez. Finansal kararlarınızı almadan önce yetkili kuruluşlardan profesyonel destek almanız önerilir. Tüm hakları saklıdır © 2026.",
+    "footer.motto":
+      "Veri pusuladır, disiplin ise sarsılmaz bir irade. Finansal geleceğinizi şansa değil, algoritmik stratejiye emanet edin.",
+    "footer.description":
+      "Piyasa zekasını disiplinli strateji ve veri odaklı metodoloji ile birleştiren profesyonel ekosistem.",
+    "footer.quickLinksTitle": "Hızlı Linkler",
+    "footer.channelsTitle": "Resmi Kanallar"
   },
   en: {
     "nav.services": "Strategies",
@@ -84,7 +99,7 @@ const translations = {
       "This platform operates with a closed-access model. Login credentials are created by our team and shared only with authorized members.",
     "member.register": "Join Now",
     "member.login": "Panel Access",
-    "hero.eyebrow": "STRATEGIC ANALYSIS AND QUANT MODELING OFFICE",
+    "hero.eyebrow": "STRATEGIC ANALYSIS AND QUANTITATIVE MODELING TERMINAL",
     "hero.title": "In financial markets, <span class='hero-highlight'>mathematical discipline</span> and <span class='hero-highlight'>high technology</span>.",
     "hero.text":
       "A professional ecosystem built on data-driven market dynamics analysis, rule-based execution models, and advanced risk management discipline.",
@@ -115,10 +130,13 @@ const translations = {
     "about.block1Title": "Analytical Strength from the Core",
     "about.p2":
       "I blended advanced technical analysis training with models I developed over the years. Beyond charts, I learned to read market-maker behavior, speculative psychology, and market structure through a sociological lens.",
-    "about.block2Title": "Technology and Strategy: BoraEcevit-ALGO",
-    "about.item1": "Algorithmic Systems: Rule-based and disciplined models free from emotions.",
-    "about.item2": "Indicator Engineering: Strategy-focused tools filtering market noise.",
-    "about.item3": "Selective Stock Analysis: Strategic selection by combining board dynamics with core data.",
+    "about.block2Title": "Technology and Strategy: BoraEcevit-BETRADER",
+    "about.item1":
+      "<strong class='about-item-lead'>Algorithmic Systems:</strong> Rule-based and disciplined models free from emotions.",
+    "about.item2":
+      "<strong class='about-item-lead'>Indicator Engineering:</strong> Strategy-focused tools filtering market noise.",
+    "about.item3":
+      "<strong class='about-item-lead'>Selective Stock Analysis:</strong> Strategic selection by combining board dynamics with core data.",
     "about.block3Title": "Vision: Discipline and Transparency",
     "about.p3":
       "Protecting individual investors and strengthening financial literacy with ethical standards is my top priority.",
@@ -145,7 +163,13 @@ const translations = {
     "vision.detail":
       "Price reflects everything; however, algorithms decode intentions. We trade the real signal inside market noise.",
     "footer.disclaimer":
-      "Legal Declaration: All content, analysis, and algorithmic modeling shared on this platform are provided as personal views and technical educational material. Under Capital Markets Law No. 6362, this does not constitute investment advisory services. Before making financial decisions, obtaining professional guidance from authorized institutions is strongly recommended. All rights reserved © 2026."
+      "Legal Declaration: All content, analysis, and algorithmic modeling shared on this platform are provided as personal views and technical educational material. Under Capital Markets Law No. 6362, this does not constitute investment advisory services. Before making financial decisions, obtaining professional guidance from authorized institutions is strongly recommended. All rights reserved © 2026.",
+    "footer.motto":
+      "Data is the compass, discipline is the unwavering will. Entrust your financial future to algorithmic strategy, not chance.",
+    "footer.description":
+      "A professional ecosystem combining market intelligence with disciplined strategy and data-driven methodology.",
+    "footer.quickLinksTitle": "QUICK LINKS",
+    "footer.channelsTitle": "OFFICIAL CHANNELS"
   }
 };
 
@@ -233,6 +257,10 @@ function applyLanguage(lang) {
 
   langButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.lang === lang);
+  });
+
+  document.querySelectorAll("[data-whatsapp-link]").forEach((el) => {
+    el.href = WHATSAPP_MEETING_URL[lang] || WHATSAPP_MEETING_URL.tr;
   });
 
   localStorage.setItem("siteLanguage", lang);

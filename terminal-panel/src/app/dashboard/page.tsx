@@ -1,5 +1,9 @@
 import { createClient } from "@/lib/supabase/server";
 
+export const metadata = {
+  title: "Genel Bakış"
+};
+
 function toUpperTerminal(text: string) {
   return text.toLocaleUpperCase("tr-TR");
 }

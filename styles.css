@@ -493,6 +493,12 @@ h2 {
   line-height: 1.9;
 }
 
+.about-list .about-item-lead {
+  font-weight: 700;
+  color: #f0ebe3;
+  letter-spacing: 0.02em;
+}
+
 .about-quote {
   margin: 24px 0 0;
   padding: 16px 18px;

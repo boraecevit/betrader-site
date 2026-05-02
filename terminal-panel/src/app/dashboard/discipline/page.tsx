@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Psikolojik Yönetim"
+};
+
 const modules = [
   "Psikolojik yönetim protokolleri",
   "Kasa disiplini ve pozisyon büyüklüğü standartları",
