@@ -29,15 +29,15 @@ const translations = {
     "hero.focus4": "Davranışsal ve Operasyonel Disiplin",
     "hero.trustNote": "2012'den bu yana, piyasa tecrübesi ve teknolojik inovasyonun buluşma noktası.",
     "services.title": "Hizmetler",
-    "services.s1.title": "Algoritmik Sistem Tasarımı",
+    "services.s1.title": "Kurumsal Veri ve Operasyon İstihbarat Ağı",
     "services.s1.text":
-      "Fiyat hareketlerini istatistiksel verilere dayandıran, duygudan arındırılmış ve tamamen kural setlerine bağlı çalışan özel yazılım çözümleri ve optimizasyon süreçleri.",
-    "services.s2.title": "İleri Seviye Teknik Analiz",
+      "En büyük kazançlar, kalabalıklar fark etmeden önce arka planda oluşur. Sektörel bilgi ağımızı ve derin piyasa analizlerimizi algoritmalarla süzüyoruz. Temel amacımız; tahtalardaki gizli toplanma (akümülasyon) süreçlerini ana hareket başlamadan tespit edip, kapalı gruplarımızdaki seçkin üyelerimize her ay düzenli piyasa üstü kazanç (Alfa) fırsatları sunmaktır.",
+    "services.s2.title": "Algoritmik Sinyal Mimarisi",
     "services.s2.text":
-      "Kurumsal piyasa yapılarını (Institutional Order Flow) ve fiyatın likidite dinamiklerini temel alan, ileri düzey teknik modelleme eğitimleri.",
-    "services.s3.title": "Risk ve Para Yönetimi",
+      "İnsan gözünün kaçıracağı matematiksel dip kırılımlarını ve mikro ve makro trend başlangıçlarını özel indikatör mühendisliğimizle anında tespit ediyoruz. Yoruma kapalı, şansa yer bırakmayan ve tamamen kural tabanlı net sinyallerle donatılmış bu altyapı, operasyonlarımızda mutlak kesinlik sağlar.",
+    "services.s3.title": "Terminal ve Kapalı Arşiv Kütüphane",
     "services.s3.text":
-      "Sermaye sürdürülebilirliği için matematiksel kasa yönetimi, dinamik pozisyon büyüklüğü hesaplama ve portföy riskini minimize eden disiplin modelleri.",
+      "Bireysel işlemlerin çok ötesine geçerek kurumsal düzeyde üstünlük sağlamak isteyen seçkin üyelerimiz için oluşturulmuş özel donanım ve strateji arşivi. Kapalı devre ağımızın operasyonel gücüne ek olarak; piyasa mikroyapısını çözen ileri seviye teknik analiz sunumları ve piyasa gürültüsünü filtreleyen BETrader tescilli algoritma kütüphanesi, yalnızca imtiyazlı statüdeki üyelerimizin operasyonel ekranlarına özel olarak entegre edilir.",
     "about.title": "Hakkımda",
     "about.subtitle": "Piyasanın İçinden, Teknolojinin Geleceğine",
     "about.intro":
@@ -112,15 +112,15 @@ const translations = {
     "hero.focus4": "Behavioral and Operational Discipline",
     "hero.trustNote": "Since 2012, where market experience meets technological innovation.",
     "services.title": "Services",
-    "services.s1.title": "Algorithmic System Design",
+    "services.s1.title": "Corporate Data and Operational Intelligence Network",
     "services.s1.text":
-      "Custom software solutions and optimization processes based on statistical price behavior, emotion-free execution, and strict rule sets.",
-    "services.s2.title": "Advanced Technical Analysis",
+      "The largest gains often take shape behind the scenes before the crowd notices. We refine our sector intelligence fabric and deep market analysis through algorithms. Our core objective is to detect hidden accumulation on the tape before the primary move begins—and to deliver consistent, market-beating Alpha opportunities every month to distinguished members of our closed groups.",
+    "services.s2.title": "Algorithmic Signal Architecture",
     "services.s2.text":
-      "Advanced model training built on institutional order flow structures and liquidity dynamics.",
-    "services.s3.title": "Risk and Money Management",
+      "We instantly identify mathematical downside breaks and micro- and macro-trend origins that human observation would miss—through proprietary indicator engineering. This infrastructure is equipped with unambiguous, interpretation-resistant, fully rule-based signals that leave nothing to chance—yielding operational certainty.",
+    "services.s3.title": "Terminal and Closed Archive Library",
     "services.s3.text":
-      "Discipline models focused on mathematical bankroll management, dynamic position sizing, and portfolio risk minimization.",
+      "A proprietary hardware and strategy archive for distinguished members seeking institutional-grade edge beyond retail execution. Beyond our closed-circuit network's operational power, advanced technical briefings that decode market microstructure—and the proprietary BETrader algorithm library that filters market noise—are integrated exclusively onto privileged members' operational terminals.",
     "about.title": "About",
     "about.subtitle": "From Market Floors to Future Technology",
     "about.intro":

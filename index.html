@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -113,32 +113,38 @@
           </aside>
         </div>
       </section>
-      <section id="services" class="section">
+      <section id="services" class="section section-services">
         <div class="container">
-          <h2 data-i18n="services.title">Hizmetler</h2>
+          <h2 class="section-services__heading" data-i18n="services.title">Hizmetler</h2>
           <div class="cards">
-            <article class="card">
-              <h3 data-i18n="services.s1.title">Algoritmik Sistem Tasarımı</h3>
-              <p data-i18n="services.s1.text">
-                Fiyat hareketlerini istatistiksel verilere dayandıran, duygudan
-                arındırılmış ve tamamen kural setlerine bağlı çalışan özel yazılım
-                çözümleri ve optimizasyon süreçleri.
+            <article class="card service-terminal-card">
+              <div class="service-terminal-card__glyph" aria-hidden="true">
+                <span class="service-terminal-card__glyph-dot"></span>
+                <span class="service-terminal-card__glyph-line"></span>
+              </div>
+              <h3 data-i18n="services.s1.title">Kurumsal Veri ve Operasyon İstihbarat Ağı</h3>
+              <p class="service-terminal-card__body" data-i18n="services.s1.text">
+                En büyük kazançlar, kalabalıklar fark etmeden önce arka planda oluşur. Sektörel bilgi ağımızı ve derin piyasa analizlerimizi algoritmalarla süzüyoruz. Temel amacımız; tahtalardaki gizli toplanma (akümülasyon) süreçlerini ana hareket başlamadan tespit edip, kapalı gruplarımızdaki seçkin üyelerimize her ay düzenli piyasa üstü kazanç (Alfa) fırsatları sunmaktır.
               </p>
             </article>
-            <article class="card">
-              <h3 data-i18n="services.s2.title">İleri Seviye Teknik Analiz</h3>
-              <p data-i18n="services.s2.text">
-                Kurumsal piyasa yapılarını (Institutional Order Flow) ve fiyatın
-                likidite dinamiklerini temel alan, ileri düzey teknik modelleme
-                eğitimleri.
+            <article class="card service-terminal-card">
+              <div class="service-terminal-card__glyph" aria-hidden="true">
+                <span class="service-terminal-card__glyph-dot"></span>
+                <span class="service-terminal-card__glyph-line"></span>
+              </div>
+              <h3 data-i18n="services.s2.title">Algoritmik Sinyal Mimarisi</h3>
+              <p class="service-terminal-card__body" data-i18n="services.s2.text">
+                İnsan gözünün kaçıracağı matematiksel dip kırılımlarını ve mikro ve makro trend başlangıçlarını özel indikatör mühendisliğimizle anında tespit ediyoruz. Yoruma kapalı, şansa yer bırakmayan ve tamamen kural tabanlı net sinyallerle donatılmış bu altyapı, operasyonlarımızda mutlak kesinlik sağlar.
               </p>
             </article>
-            <article class="card">
-              <h3 data-i18n="services.s3.title">Risk ve Para Yönetimi</h3>
-              <p data-i18n="services.s3.text">
-                Sermaye sürdürülebilirliği için matematiksel kasa yönetimi, dinamik
-                pozisyon büyüklüğü hesaplama ve portföy riskini minimize eden
-                disiplin modelleri.
+            <article class="card service-terminal-card">
+              <div class="service-terminal-card__glyph" aria-hidden="true">
+                <span class="service-terminal-card__glyph-dot"></span>
+                <span class="service-terminal-card__glyph-line"></span>
+              </div>
+              <h3 data-i18n="services.s3.title">Terminal ve Kapalı Arşiv Kütüphane</h3>
+              <p class="service-terminal-card__body" data-i18n="services.s3.text">
+                Bireysel işlemlerin çok ötesine geçerek kurumsal düzeyde üstünlük sağlamak isteyen seçkin üyelerimiz için oluşturulmuş özel donanım ve strateji arşivi. Kapalı devre ağımızın operasyonel gücüne ek olarak; piyasa mikroyapısını çözen ileri seviye teknik analiz sunumları ve piyasa gürültüsünü filtreleyen BETrader tescilli algoritma kütüphanesi, yalnızca imtiyazlı statüdeki üyelerimizin operasyonel ekranlarına özel olarak entegre edilir.
               </p>
             </article>
           </div>
