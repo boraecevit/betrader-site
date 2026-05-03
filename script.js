@@ -79,6 +79,7 @@ const translations = {
       "Benim için borsa; sadece bir alım-satım platformu değil, doğru strateji ve çelik gibi bir iradeyle yönetilmesi gereken bir matematiksel sanattır.",
     "vision.detail":
       "Fiyat her şeyi içerir; ancak algoritmalar niyetleri deşifre eder. Biz, piyasadaki gürültünün içindeki gerçek sinyali trade ediyoruz.",
+    "footer.legalTitle": "Yasal Deklarasyon",
     "footer.disclaimer":
       "Bu platformda yer alan her türlü içerik, analiz ve algoritmik modelleme; kişisel görüşler ve teknik eğitim materyalleri kapsamında sunulmaktadır. 6362 sayılı Sermaye Piyasası Kanunu uyarınca 'Yatırım Danışmanlığı' teşkil etmez. Finansal kararlarınızı almadan önce yetkili kuruluşlardan profesyonel destek almanız önerilir. Tüm hakları saklıdır © 2026.",
     "footer.motto":
@@ -162,8 +163,9 @@ const translations = {
       "For me, the market is not just a trading platform; it is a mathematical art that must be managed with the right strategy and steel-like discipline.",
     "vision.detail":
       "Price reflects everything; however, algorithms decode intentions. We trade the real signal inside market noise.",
+    "footer.legalTitle": "Legal Declaration",
     "footer.disclaimer":
-      "Legal Declaration: All content, analysis, and algorithmic modeling shared on this platform are provided as personal views and technical educational material. Under Capital Markets Law No. 6362, this does not constitute investment advisory services. Before making financial decisions, obtaining professional guidance from authorized institutions is strongly recommended. All rights reserved © 2026.",
+      "All content, analysis, and algorithmic modeling shared on this platform are provided as personal views and technical educational material. Under Capital Markets Law No. 6362, this does not constitute investment advisory services. Before making financial decisions, obtaining professional guidance from authorized institutions is strongly recommended. All rights reserved © 2026.",
     "footer.motto":
       "Data is the compass, discipline is the unwavering will. Entrust your financial future to algorithmic strategy, not chance.",
     "footer.description":
