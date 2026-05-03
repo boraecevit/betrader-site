@@ -170,17 +170,33 @@ a {
 }
 
 .member-btn {
-  padding: 8px 14px;
+  padding: 8px 18px;
   border: 1px solid rgba(212, 175, 55, 0.7);
   color: var(--white);
   font-size: 0.9rem;
   background: transparent;
+  flex-shrink: 0;
 }
 
 .member-btn:hover {
   background: #d4af37;
   color: #16120b;
   box-shadow: 0 0 14px rgba(212, 175, 55, 0.28);
+}
+
+/* Terminale Bağlan — kelime kırılması ve flex daralmasına karşı tek satır */
+.terminal-connect-cta {
+  white-space: nowrap !important;
+  flex: 0 0 auto !important;
+  min-width: max(14rem, max-content) !important;
+  width: fit-content !important;
+  max-width: none !important;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.terminal-connect-cta.btn.primary {
+  overflow: visible !important;
 }
 
 .member-strip {
@@ -195,6 +211,11 @@ a {
   justify-content: space-between;
   gap: 16px;
   padding: 10px 0;
+}
+
+.member-strip-wrap > div:first-of-type {
+  flex: 1;
+  min-width: 0;
 }
 
 .member-strip-title {
@@ -213,10 +234,13 @@ a {
 .member-strip-actions {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 .member-strip-actions .btn {
+  flex-shrink: 0;
+  min-width: max-content;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
 }
 
@@ -224,6 +248,10 @@ a {
   border: 1px solid rgba(212, 175, 55, 0.5);
   background: rgba(212, 175, 55, 0.16);
   color: #f8fafc;
+  white-space: nowrap;
+  padding-inline: 22px;
+  /* .btn.primary overflow:hidden flex min-size 0 iken daralıp metni kırıyordu */
+  min-width: max-content;
 }
 
 .member-strip-actions .btn.primary:hover {
@@ -364,8 +392,7 @@ h1 {
 }
 
 .hero-card,
-.step,
-.contact-form {
+.step {
   background: linear-gradient(180deg, rgba(18, 28, 60, 0.94), rgba(15, 21, 43, 0.94));
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -763,10 +790,15 @@ h2 {
   line-height: 1.75;
 }
 
-.contact-wrap {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 28px;
+.contact-lead .contact-text-wa {
+  color: #d4af37;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contact-lead .contact-text-wa:hover {
+  color: #e8c547;
 }
 
 .contact-list {
@@ -774,73 +806,6 @@ h2 {
   padding-left: 18px;
   color: var(--muted);
   line-height: 1.8;
-}
-
-.contact-form {
-  padding: 20px;
-  background: linear-gradient(180deg, rgba(10, 16, 36, 0.98), rgba(8, 13, 28, 0.98));
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 14px;
-}
-
-.contact-form span {
-  display: block;
-  margin-bottom: 6px;
-  color: #bfd0ff;
-  font-size: 0.94rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px 11px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: #0a1230;
-  color: var(--text);
-  outline: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--primary);
-}
-
-.form-feedback {
-  min-height: 18px;
-  margin: 8px 0 0;
-  font-size: 0.9rem;
-  color: #cfd5e6;
-}
-
-.form-feedback.success {
-  color: #6ef0a8;
-}
-
-.form-feedback.error {
-  color: #ff9aa2;
-}
-
-.submit-gold {
-  border: 1px solid rgba(255, 232, 163, 0.5);
-  background: linear-gradient(135deg, #c79c2d, #f3d27a);
-  color: #17120b;
-  font-weight: 700;
-  box-shadow: 0 8px 20px rgba(199, 156, 45, 0.28);
-}
-
-.submit-gold:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.03);
-}
-
-.submit-gold:disabled {
-  opacity: 0.72;
-  cursor: not-allowed;
-  transform: none;
 }
 
 .site-footer {
@@ -996,7 +961,6 @@ h2 {
   .hero-grid,
   .cards,
   .steps,
-  .contact-wrap,
   .footer-upper {
     grid-template-columns: 1fr;
   }

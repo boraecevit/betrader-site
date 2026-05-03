@@ -1,7 +1,7 @@
 /** WhatsApp deep links: prefilled message switches with language (TR / EN). */
 const WHATSAPP_MEETING_URL = {
-  tr: "https://wa.me/905472991993?text=Merhaba,%20stratejik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20BE-ALGO%20terminali%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum",
-  en: "https://wa.me/905472991993?text=Hello,%20I%20would%20like%20to%20request%20a%20meeting%20regarding%20strategic%20consultancy%20and%20the%20BE-ALGO%20terminal"
+  tr: "https://wa.me/905472991993?text=Merhaba,%20stratejik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20BETRADER%20terminali%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum",
+  en: "https://wa.me/905472991993?text=Hello,%20I%20would%20like%20to%20request%20a%20meeting%20regarding%20strategic%20consultancy%20and%20the%20BETRADER%20terminal"
 };
 
 const translations = {
@@ -10,12 +10,12 @@ const translations = {
     "nav.about": "Deneyim",
     "nav.approach": "Metodoloji",
     "nav.contact": "İletişim",
-    "nav.memberCta": "Panel Girişi",
-    "member.title": "Davet Tabanlı Sayısal Strateji Paneli",
+    "nav.memberCta": "Terminale\u00A0Bağlan",
+    "member.title": "BETRADER Erişim Terminali",
     "member.text":
-      "Bu platform kapalı erişim modeliyle çalışır. Giriş bilgileriniz tarafımızca oluşturulur ve yetkilendirilen kullanıcılara özel olarak iletilir.",
+      "Bu ağ, yalnızca ön onay sürecini tamamlamış imtiyazlı üyelerin ve kurumsal paydaşların kullanımına tahsis edilmiştir. Sisteme giriş yetkisi ve operasyon ekranı bağlantıları, sadece gruba kabul edilen yatırımcılara özel olarak tanımlanmaktadır.",
     "member.register": "Üye Ol",
-    "member.login": "Panel Girişi",
+    "member.login": "Terminale\u00A0Bağlan",
     "hero.eyebrow": "STRATEJİK ANALİZ VE SAYISAL MODELLEME TERMİNALİ",
     "hero.title": "Finansal piyasalarda <span class='hero-highlight'>matematiksel disiplin</span> ve <span class='hero-highlight'>yüksek teknoloji</span>.",
     "hero.text":
@@ -66,14 +66,14 @@ const translations = {
     "approach.a2.text": "İleri düzey teknik analiz metodolojilerinin, kural tabanlı algoritmik sistemlere dönüştürülmesi. Geçmiş veri simülasyonları (backtest) ile strateji optimizasyonu.",
     "approach.a3.title": "Dinamik Risk ve Portföy Disiplini",
     "approach.a3.text": "Değişen piyasa korelasyonlarına göre risk parametrelerinin anlık güncellenmesi. Sermaye koruma odaklı, dinamik pozisyon yönetimi ve performans denetimi.",
-    "contact.title": "Stratejik İletişim Hattı",
+    "contact.title": "Stratejik İletişim ve Operasyon Hattı",
     "contact.text":
-      "Kurumsal iş birlikleri, algoritmik modelleme projeleri veya üst düzey finansal disiplin mentorluğu için doğrudan iletişim kurabilirsiniz. Talepleriniz, piyasa yoğunluğu dikkate alınarak en kısa sürede değerlendirilecektir.",
+      'Ağa katılım değerlendirmeleri, algoritmik modelleme talepleri ve anlık bilgi akışı için doğrudan operasyon hattıyla <a class="contact-text-wa" href="https://wa.me/905472991993?text=Merhaba,%20stratejik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20BETRADER%20terminali%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" rel="noopener noreferrer" data-whatsapp-link>(Whatsapp)</a> irtibat kurabilirsiniz. Hızın ve kesintisiz iletişimin esas olduğu bu ekosistemde; kurumsal iş birlikleri, özel katılım talepleri ve resmi entegrasyonlar için E-posta ve WhatsApp ile iletişime geçebilirsiniz.',
+    "contact.whatsappLine":
+      '🟢 Operasyon Hattı (WhatsApp): <a href="https://wa.me/905472991993?text=Merhaba,%20stratejik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20BETRADER%20terminali%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" rel="noopener noreferrer" data-whatsapp-link>+90 547 299 19 93</a>',
+    "contact.emailLine":
+      '✉️ Kurumsal E-posta: <a href="mailto:info@boraecevit.com">info@boraecevit.com</a>',
     "contact.channelsTitle": "Resmi Kanallar",
-    "contact.form.name": "Ad Soyad",
-    "contact.form.email": "E-posta",
-    "contact.form.message": "Mesaj",
-    "contact.form.submit": "Talebi İlet",
     "vision.title": "Piyasa Vizyonu",
     "vision.lead":
       "Benim için borsa; sadece bir alım-satım platformu değil, doğru strateji ve çelik gibi bir iradeyle yönetilmesi gereken bir matematiksel sanattır.",
@@ -93,12 +93,12 @@ const translations = {
     "nav.about": "Experience",
     "nav.approach": "Methodology",
     "nav.contact": "Contact",
-    "nav.memberCta": "Panel Access",
-    "member.title": "Invitation-Only Quant Strategy Panel",
+    "nav.memberCta": "Connect\u00A0to\u00A0Terminal",
+    "member.title": "BETRADER Access Terminal",
     "member.text":
-      "This platform operates with a closed-access model. Login credentials are created by our team and shared only with authorized members.",
+      "This network is reserved exclusively for privileged members and institutional partners who have completed the pre-approval process. System login privileges and operational screen connections are provisioned exclusively for investors admitted to the group.",
     "member.register": "Join Now",
-    "member.login": "Panel Access",
+    "member.login": "Connect\u00A0to\u00A0Terminal",
     "hero.eyebrow": "STRATEGIC ANALYSIS AND QUANTITATIVE MODELING TERMINAL",
     "hero.title": "In financial markets, <span class='hero-highlight'>mathematical discipline</span> and <span class='hero-highlight'>high technology</span>.",
     "hero.text":
@@ -149,14 +149,14 @@ const translations = {
     "approach.a2.text": "Transforming advanced technical analysis methodologies into rule-based algorithmic systems. Strategy optimization through historical simulations (backtests).",
     "approach.a3.title": "Dynamic Risk and Portfolio Discipline",
     "approach.a3.text": "Real-time updates of risk parameters according to changing market correlations. Dynamic position management and performance control centered on capital preservation.",
-    "contact.title": "Strategic Communication Line",
+    "contact.title": "Strategic Communication and Operations Line",
     "contact.text":
-      "You may contact directly for institutional collaborations, algorithmic modeling projects, or high-level financial discipline mentoring. Requests are reviewed promptly according to market intensity.",
+      'For network admission reviews, algorithmic modeling requests, and real-time intelligence flow, you may reach the operations line directly via <a class="contact-text-wa" href="https://wa.me/905472991993?text=Hello,%20I%20would%20like%20to%20request%20a%20meeting%20regarding%20strategic%20consultancy%20and%20the%20BETRADER%20terminal" target="_blank" rel="noopener noreferrer" data-whatsapp-link>(WhatsApp)</a>. In this ecosystem where speed and uninterrupted communication are essential, please contact us by email or WhatsApp for institutional partnerships, special participation requests, and official integrations.',
+    "contact.whatsappLine":
+      '🟢 Operations line (WhatsApp): <a href="https://wa.me/905472991993?text=Hello,%20I%20would%20like%20to%20request%20a%20meeting%20regarding%20strategic%20consultancy%20and%20the%20BETRADER%20terminal" target="_blank" rel="noopener noreferrer" data-whatsapp-link>+90 547 299 19 93</a>',
+    "contact.emailLine":
+      '✉️ Corporate email: <a href="mailto:info@boraecevit.com">info@boraecevit.com</a>',
     "contact.channelsTitle": "Official Channels",
-    "contact.form.name": "Full Name",
-    "contact.form.email": "Email",
-    "contact.form.message": "Message",
-    "contact.form.submit": "Submit Request",
     "vision.title": "Market Vision",
     "vision.lead":
       "For me, the market is not just a trading platform; it is a mathematical art that must be managed with the right strategy and steel-like discipline.",
@@ -178,15 +178,11 @@ const langButtons = document.querySelectorAll(".lang-btn");
 const translatableItems = document.querySelectorAll("[data-i18n]");
 const translatableHtmlItems = document.querySelectorAll("[data-i18n-html]");
 const yearSpan = document.getElementById("year");
-const contactForm = document.getElementById("contact-form");
-const formFeedback = document.getElementById("form-feedback");
 const bistStatusText = document.getElementById("bist-status-text");
 const bistDot = document.getElementById("bist-dot");
 const clockNy = document.getElementById("clock-ny");
 const clockLon = document.getElementById("clock-lon");
 const clockIst = document.getElementById("clock-ist");
-
-const FORM_ENDPOINT = "https://formspree.io/f/xvzdeazd";
 
 function getClockLabel(date, timeZone) {
   return new Intl.DateTimeFormat("tr-TR", {
@@ -276,52 +272,3 @@ yearSpan.textContent = new Date().getFullYear();
 applyLanguage(localStorage.getItem("siteLanguage") || "tr");
 updateInstitutionalTopBar();
 setInterval(updateInstitutionalTopBar, 1000);
-
-if (contactForm) {
-  contactForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    const submitButton = contactForm.querySelector("button[type='submit']");
-    const initialButtonText = submitButton ? submitButton.textContent : "";
-
-    if (submitButton) {
-      submitButton.disabled = true;
-      submitButton.textContent = "Loading...";
-    }
-
-    if (formFeedback) {
-      formFeedback.className = "form-feedback";
-      formFeedback.textContent = "";
-    }
-
-    try {
-      const response = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        body: new FormData(contactForm),
-        headers: {
-          Accept: "application/json"
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error("Form gönderimi başarısız.");
-      }
-
-      contactForm.reset();
-      if (formFeedback) {
-        formFeedback.className = "form-feedback success";
-        formFeedback.textContent = "Başarıyla gönderildi.";
-      }
-    } catch (error) {
-      if (formFeedback) {
-        formFeedback.className = "form-feedback error";
-        formFeedback.textContent = "Gönderim sırasında bir hata oluştu. Lütfen tekrar deneyin.";
-      }
-    } finally {
-      if (submitButton) {
-        submitButton.disabled = false;
-        submitButton.textContent = initialButtonText || "Talebi İlet";
-      }
-    }
-  });
-}
