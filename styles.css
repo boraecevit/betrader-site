@@ -387,8 +387,7 @@ h1 {
   color: #e2e8f0;
 }
 
-.hero-card,
-.step {
+.hero-card {
   background: linear-gradient(180deg, rgba(18, 28, 60, 0.94), rgba(15, 21, 43, 0.94));
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -686,11 +685,12 @@ h2 {
 
 .vision-card {
   position: relative;
-  padding: 20px 20px 34px;
-  border-radius: 14px;
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(7px);
+  padding: 22px 22px 46px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: #e5e7eb;
 }
 
@@ -700,23 +700,27 @@ h2 {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 4px;
-  background: #d4af37;
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
+  width: 2px;
+  background: rgba(228, 231, 235, 0.38);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: 2px 0 14px rgba(228, 231, 235, 0.06);
 }
 
 .vision-lead {
   margin: 0;
-  font-size: 1.12rem;
-  font-weight: 600;
+  max-width: 52ch;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: clamp(1.18rem, 2.4vw, 1.38rem);
+  font-weight: 300;
   font-style: italic;
-  line-height: 1.8;
-  color: #e5e7eb;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  color: #eceff4;
 }
 
 .vision-detail {
-  margin: 14px 0 0;
+  margin: 16px 0 0;
   font-size: 0.99rem;
   font-weight: 400;
   line-height: 1.8;
@@ -725,83 +729,325 @@ h2 {
 
 .vision-signature {
   position: absolute;
-  right: 16px;
-  bottom: 8px;
-  font-family: "Brush Script MT", "Segoe Script", cursive;
-  font-size: 1.3rem;
-  opacity: 0.2;
-  color: #e8d6a1;
+  right: 20px;
+  bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
   user-select: none;
 }
 
-.steps {
+.vision-signature__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: max-content;
+  gap: 0;
+}
+
+.vision-signature__divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 6px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 175, 55, 0.45) 35%,
+    rgba(228, 231, 235, 0.35) 100%
+  );
+}
+
+.vision-signature__name {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+  line-height: 1.25;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* —— Operasyonel Metodoloji: sessiz lüks / kurumsal finans —— */
+.approach-terminal-steps {
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 20px;
   position: relative;
 }
 
-.steps::before {
+.approach-terminal-steps::before {
   content: "";
   position: absolute;
-  left: 16px;
-  top: 12px;
-  bottom: 12px;
-  width: 2px;
-  background: linear-gradient(180deg, rgba(212, 175, 55, 0.7), rgba(57, 255, 136, 0.3));
+  left: 17px;
+  top: 14px;
+  bottom: 14px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.step {
-  padding: 22px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
-  margin-left: 28px;
+.approach-terminal-step {
+  padding: 22px 22px 22px 24px;
+  margin-left: 32px;
   position: relative;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(30, 41, 59, 0.68);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition:
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    background 0.45s ease;
 }
 
-.step::before {
+.approach-terminal-step:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  background: rgba(30, 41, 59, 0.78);
+}
+
+.approach-terminal-step::before {
   content: "";
   position: absolute;
-  left: -22px;
-  top: 24px;
-  width: 10px;
-  height: 10px;
+  left: -20px;
+  top: 28px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background: var(--primary);
-  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
+  background: rgba(234, 179, 8, 0.55);
+  border: 0;
+  box-shadow: none;
 }
 
-.step span {
+.step-index {
   display: inline-block;
-  font-weight: 700;
-  color: #9bb0f7;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-family: "Roboto Mono", "JetBrains Mono", ui-monospace, monospace;
+  font-size: 1.02rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: rgba(234, 179, 8, 0.78);
 }
 
-.step h3 {
-  margin: 6px 0;
+.approach-terminal-step h3 {
+  margin: 4px 0 8px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
-.step p {
+.approach-terminal-step p {
   margin: 0;
-  color: var(--muted);
+  color: rgba(169, 179, 217, 0.92);
   line-height: 1.75;
 }
 
-.contact-lead .contact-text-wa {
-  color: #d4af37;
+/* —— İletişim: Finansal terminal konsolu (kart + veri satırları) —— */
+#contact .container.narrow {
+  max-width: min(960px, 92vw);
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.05) 0%, transparent 38%),
+    rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 18px 48px rgba(2, 6, 18, 0.35);
+}
+
+#contact .container.narrow > h2 {
+  margin-bottom: 18px;
+}
+
+#contact .container.narrow > .about-block-title {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: #c5cde8;
+}
+
+#contact .contact-lead {
+  margin: 0;
+  color: #d1d5db;
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+#contact .contact-lead .contact-text-wa {
+  color: var(--primary);
   font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
+  text-underline-offset: unset;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
-.contact-lead .contact-text-wa:hover {
+#contact .contact-lead .contact-text-wa:hover {
   color: #e8c547;
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
 }
 
-.contact-list {
-  margin: 18px 0 0;
-  padding-left: 18px;
-  color: var(--muted);
-  line-height: 1.8;
+#contact .contact-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+#contact .contact-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#contact .contact-data-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 52px;
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(17, 24, 39, 0.92);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.45;
+  box-sizing: border-box;
+  transform: translateX(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#contact .contact-data-link:hover {
+  transform: translateX(6px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#contact .contact-list li:nth-child(1) .contact-data-link:hover {
+  box-shadow:
+    0 4px 24px rgba(255, 255, 255, 0.07),
+    0 0 28px rgba(248, 250, 252, 0.06);
+}
+
+#contact .contact-list li:nth-child(1) .contact-data-link:hover .contact-data-link__glyph {
+  color: #ffffff;
+}
+
+#contact .contact-list li:nth-child(2) .contact-data-link:hover {
+  box-shadow:
+    0 4px 22px rgba(212, 175, 55, 0.12),
+    0 0 26px rgba(212, 175, 55, 0.08);
+}
+
+#contact .contact-list li:nth-child(2) .contact-data-link:hover .contact-data-link__glyph {
+  color: #d4af37;
+}
+
+#contact .contact-list li:nth-child(3) .contact-data-link:hover {
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.1);
+}
+
+#contact .contact-list li:nth-child(3) .contact-data-link:hover .contact-data-link__glyph {
+  color: #25d366;
+}
+
+#contact .contact-data-link:hover .contact-data-link__value {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+#contact .contact-data-link:focus-visible {
+  outline: 2px solid rgba(212, 175, 55, 0.85);
+  outline-offset: 2px;
+}
+
+#contact .contact-data-link__glyph {
+  flex: 0 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  color: #94a3b8;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#contact .contact-data-link__icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+#contact .contact-data-link__label {
+  flex: 0 1 auto;
+  min-width: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #9ca3af;
+}
+
+#contact .contact-data-link__value {
+  margin-left: auto;
+  flex: 0 1 auto;
+  min-width: 0;
+  text-align: right;
+  font-family: "Roboto Mono", "SF Mono", "SFMono-Regular", ui-monospace, monospace;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-shadow: none;
+  transition: text-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #contact .contact-data-link {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #contact .contact-data-link:hover {
+    transform: none;
+  }
+
+  #contact .contact-data-link__glyph {
+    transition: color 0.3s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact .container.narrow {
+    padding: 28px 20px;
+  }
+
+  #contact .contact-data-link {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  #contact .contact-data-link__value {
+    flex-basis: 100%;
+    margin-left: 0;
+    text-align: left;
+    padding-left: calc(26px + 16px);
+  }
 }
 
 .site-footer {
@@ -928,29 +1174,44 @@ h2 {
   right: 22px;
   bottom: 22px;
   z-index: 25;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  border: 1px solid rgba(74, 222, 128, 0.45);
-  background: radial-gradient(circle at 30% 30%, #1a2f1f, #0b1611 74%);
-  color: #86efac;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+  gap: 10px;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 1px solid #25d366;
+  background-color: #070b17;
+  color: #25d366;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .whatsapp-float:hover {
-  transform: translateY(-2px);
-  color: #bbf7d0;
-  box-shadow: 0 0 24px rgba(74, 222, 128, 0.28);
+  background-color: rgba(37, 211, 102, 0.1);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.5),
+    0 0 24px rgba(37, 211, 102, 0.18);
+  transform: translateY(-1px);
 }
 
-.whatsapp-float svg {
-  width: 26px;
-  height: 26px;
-  fill: currentColor;
+.whatsapp-float__icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.whatsapp-float__label {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #25d366;
 }
 
 @media (max-width: 980px) {
@@ -973,8 +1234,18 @@ h2 {
   .whatsapp-float {
     right: 14px;
     bottom: 14px;
-    width: 50px;
-    height: 50px;
+    padding: 9px 18px;
+    gap: 8px;
+  }
+
+  .whatsapp-float__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .whatsapp-float__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
   }
 
   .top-bar-wrap {

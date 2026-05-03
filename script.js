@@ -69,10 +69,8 @@ const translations = {
     "contact.title": "Stratejik İletişim ve Operasyon Hattı",
     "contact.text":
       'Ağa katılım değerlendirmeleri, algoritmik modelleme talepleri ve anlık bilgi akışı için doğrudan operasyon hattıyla <a class="contact-text-wa" href="https://wa.me/905472991993?text=Merhaba,%20stratejik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20BETRADER%20terminali%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" rel="noopener noreferrer" data-whatsapp-link>(Whatsapp)</a> irtibat kurabilirsiniz. Hızın ve kesintisiz iletişimin esas olduğu bu ekosistemde; kurumsal iş birlikleri, özel katılım talepleri ve resmi entegrasyonlar için E-posta ve WhatsApp ile iletişime geçebilirsiniz.',
-    "contact.whatsappLine":
-      '🟢 Operasyon Hattı (WhatsApp): <a href="https://wa.me/905472991993?text=Merhaba,%20stratejik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20BETRADER%20terminali%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" rel="noopener noreferrer" data-whatsapp-link>+90 547 299 19 93</a>',
-    "contact.emailLine":
-      '✉️ Kurumsal E-posta: <a href="mailto:info@boraecevit.com">info@boraecevit.com</a>',
+    "contact.emailLabel": "Kurumsal E-posta:",
+    "contact.whatsappLabel": "Operasyon Hattı (WhatsApp):",
     "contact.channelsTitle": "Resmi Kanallar",
     "vision.title": "Piyasa Vizyonu",
     "vision.lead":
@@ -153,10 +151,8 @@ const translations = {
     "contact.title": "Strategic Communication and Operations Line",
     "contact.text":
       'For network admission reviews, algorithmic modeling requests, and real-time intelligence flow, you may reach the operations line directly via <a class="contact-text-wa" href="https://wa.me/905472991993?text=Hello,%20I%20would%20like%20to%20request%20a%20meeting%20regarding%20strategic%20consultancy%20and%20the%20BETRADER%20terminal" target="_blank" rel="noopener noreferrer" data-whatsapp-link>(WhatsApp)</a>. In this ecosystem where speed and uninterrupted communication are essential, please contact us by email or WhatsApp for institutional partnerships, special participation requests, and official integrations.',
-    "contact.whatsappLine":
-      '🟢 Operations line (WhatsApp): <a href="https://wa.me/905472991993?text=Hello,%20I%20would%20like%20to%20request%20a%20meeting%20regarding%20strategic%20consultancy%20and%20the%20BETRADER%20terminal" target="_blank" rel="noopener noreferrer" data-whatsapp-link>+90 547 299 19 93</a>',
-    "contact.emailLine":
-      '✉️ Corporate email: <a href="mailto:info@boraecevit.com">info@boraecevit.com</a>',
+    "contact.emailLabel": "Corporate email:",
+    "contact.whatsappLabel": "Operations line (WhatsApp):",
     "contact.channelsTitle": "Official Channels",
     "vision.title": "Market Vision",
     "vision.lead":
