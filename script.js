@@ -31,13 +31,13 @@ const translations = {
     "services.title": "Hizmetler",
     "services.s1.title": "Kurumsal Veri ve Operasyon İstihbarat Ağı",
     "services.s1.text":
-      "En büyük kazançlar, kalabalıklar fark etmeden önce arka planda oluşur. Sektörel bilgi ağımızı ve derin piyasa analizlerimizi algoritmalarla süzüyoruz. Temel amacımız; tahtalardaki gizli toplanma (akümülasyon) süreçlerini ana hareket başlamadan tespit edip, kapalı gruplarımızdaki seçkin üyelerimize her ay düzenli piyasa üstü kazanç (Alfa) fırsatları sunmaktır.",
+      "Piyasadaki büyük sermaye hareketlerini, henüz geniş kitleler tarafından görünür hale gelmeden önce analiz ediyoruz. Amacımız; ana trend belirginleşmeden önce oluşan fırsatları tespit ederek, piyasa üstü yüksek kazanç potansiyeli taşıyan bu içgörüyü kapalı grubumuzdaki üyelerimizle düzenli olarak paylaşmaktır.",
     "services.s2.title": "Algoritmik Sinyal Mimarisi",
     "services.s2.text":
-      "İnsan gözünün kaçıracağı matematiksel dip kırılımlarını ve mikro ve makro trend başlangıçlarını özel indikatör mühendisliğimizle anında tespit ediyoruz. Yoruma kapalı, şansa yer bırakmayan ve tamamen kural tabanlı net sinyallerle donatılmış bu altyapı, operasyonlarımızda mutlak kesinlik sağlar.",
-    "services.s3.title": "Terminal ve Kapalı Arşiv Kütüphane",
+      "Geliştirdiğimiz indikatör ve algoritmalar, piyasanın matematiksel yapısını okuyarak yüksek olasılıklı işlem bölgelerini belirler. Üyelerimize yoruma açık olmayan, net giriş ve çıkış seviyeleri içeren, tamamen kural tabanlı sinyaller sunarız; stratejiyi ekranda uygulanabilir biçimde netleştiririz.",
+    "services.s3.title": "Terminal ve Kapalı Arşiv Kütüphanesi",
     "services.s3.text":
-      "Bireysel işlemlerin çok ötesine geçerek kurumsal düzeyde üstünlük sağlamak isteyen seçkin üyelerimiz için oluşturulmuş özel donanım ve strateji arşivi. Kapalı devre ağımızın operasyonel gücüne ek olarak; piyasa mikroyapısını çözen ileri seviye teknik analiz sunumları ve piyasa gürültüsünü filtreleyen BETrader tescilli algoritma kütüphanesi, yalnızca imtiyazlı statüdeki üyelerimizin operasyonel ekranlarına özel olarak entegre edilir.",
+      "Seçkin üyelerimize özel terminal; ileri seviye analizler, strateji setleri ve algoritmik araçları tek ekranda bir araya getirir. Kapalı arşiv ve BETRADER kütüphanesi ile piyasayı daha doğru okumanızı, gürültüyü filtrelemenizi ve daha kontrollü, disiplinli kararlar almanızı hedefleriz.",
     "about.title": "Hakkımda",
     "about.subtitle": "Piyasanın İçinden, Teknolojinin Geleceğine",
     "about.intro":
@@ -114,13 +114,13 @@ const translations = {
     "services.title": "Services",
     "services.s1.title": "Corporate Data and Operational Intelligence Network",
     "services.s1.text":
-      "The largest gains often take shape behind the scenes before the crowd notices. We refine our sector intelligence fabric and deep market analysis through algorithms. Our core objective is to detect hidden accumulation on the tape before the primary move begins—and to deliver consistent, market-beating Alpha opportunities every month to distinguished members of our closed groups.",
+      "We analyze large capital flows before they become obvious to the broader market. Our aim is to identify opportunities as they emerge—before the primary trend fully asserts itself—and share that market-beating, high-return-potential intelligence on a steady cadence with members of our closed group.",
     "services.s2.title": "Algorithmic Signal Architecture",
     "services.s2.text":
-      "We instantly identify mathematical downside breaks and micro- and macro-trend origins that human observation would miss—through proprietary indicator engineering. This infrastructure is equipped with unambiguous, interpretation-resistant, fully rule-based signals that leave nothing to chance—yielding operational certainty.",
+      "Our proprietary indicators and algorithms read the market's mathematical structure to highlight higher-probability trade zones. Members receive rule-based signals that are not open to interpretation, with clear entry and exit levels—so the strategy stays actionable and explicit on the screen.",
     "services.s3.title": "Terminal and Closed Archive Library",
     "services.s3.text":
-      "A proprietary hardware and strategy archive for distinguished members seeking institutional-grade edge beyond retail execution. Beyond our closed-circuit network's operational power, advanced technical briefings that decode market microstructure—and the proprietary BETrader algorithm library that filters market noise—are integrated exclusively onto privileged members' operational terminals.",
+      "The private terminal brings advanced analytics, strategy sets, and algorithmic tools together in one workspace. The closed archive and BETrader library are designed to help you read the market more accurately, filter noise, and make calmer, more disciplined decisions.",
     "about.title": "About",
     "about.subtitle": "From Market Floors to Future Technology",
     "about.intro":
