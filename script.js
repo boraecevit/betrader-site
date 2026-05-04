@@ -38,6 +38,9 @@ const translations = {
     "services.s3.title": "Terminal ve Kapalı Arşiv Kütüphanesi",
     "services.s3.text":
       "Seçkin üyelerimize özel terminal; ileri seviye analizler, strateji setleri ve algoritmik araçları tek ekranda bir araya getirir. Kapalı arşiv ve BETRADER kütüphanesi ile piyasayı daha doğru okumanızı, gürültüyü filtrelemenizi ve daha kontrollü, disiplinli kararlar almanızı hedefleriz.",
+    "services.ctaLead":
+      "Bu hizmetlerle ilgili bilgi almak ve kapalı grubumuza katılmak için",
+    "services.ctaSecondary": "İletişim ve kanallar",
     "about.title": "Hakkımda",
     "about.subtitle": "Piyasanın İçinden, Teknolojinin Geleceğine",
     "about.intro":
@@ -121,6 +124,9 @@ const translations = {
     "services.s3.title": "Terminal and Closed Archive Library",
     "services.s3.text":
       "The private terminal brings advanced analytics, strategy sets, and algorithmic tools together in one workspace. The closed archive and BETrader library are designed to help you read the market more accurately, filter noise, and make calmer, more disciplined decisions.",
+    "services.ctaLead":
+      "To learn more about these services and join our closed group",
+    "services.ctaSecondary": "Contact and channels",
     "about.title": "About",
     "about.subtitle": "From Market Floors to Future Technology",
     "about.intro":
