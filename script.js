@@ -60,6 +60,9 @@ const translations = {
     "quote.main":
       "Benim için borsa; sadece bir alım-satım platformu değil, doğru strateji ve çelik gibi bir iradeyle yönetilmesi gereken bir matematiksel sanattır.",
     "approach.title": "Operasyonel Metodoloji",
+    "approach.phase1": "// PHASE 01",
+    "approach.phase2": "// PHASE 02",
+    "approach.phase3": "// PHASE 03",
     "approach.a1.title": "Piyasa Mikroyapı Analizi",
     "approach.a1.text": "Makro veriler ve tahta yapıcı (market maker) davranışları üzerinden piyasa likiditesinin ve akümülasyon bölgelerinin analizi. Arz-talep dengesizliklerinin sayısal tespiti.",
     "approach.a2.title": "Sayısal Strateji ve Algoritmik Modelleme",
@@ -143,6 +146,9 @@ const translations = {
     "quote.main":
       "For me, the market is not just a trading platform; it is a mathematical art that must be managed with the right strategy and a steel-like discipline.",
     "approach.title": "Operational Methodology",
+    "approach.phase1": "// PHASE 01",
+    "approach.phase2": "// PHASE 02",
+    "approach.phase3": "// PHASE 03",
     "approach.a1.title": "Market Microstructure Analysis",
     "approach.a1.text": "Analyzing market liquidity and accumulation zones through macro data and market maker behavior. Quantitative detection of supply-demand imbalances.",
     "approach.a2.title": "Quant Strategy and Algorithmic Modeling",
