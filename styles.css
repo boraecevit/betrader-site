@@ -513,21 +513,21 @@ h2 {
   max-width: min(72rem, 100%);
   width: 100%;
   text-align: center;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-gutter: stable;
 }
 
 .section-services__cta-lead {
-  display: inline-block;
-  margin: 0 0 1.1rem;
+  display: block;
+  margin: 0 auto 1.1rem;
+  padding: 0 clamp(4px, 2vw, 12px);
+  box-sizing: border-box;
   color: var(--muted);
-  font-size: clamp(0.82rem, 2.15vw, 1.08rem);
-  line-height: 1.5;
-  max-width: none;
+  font-size: clamp(0.95rem, 1.85vw, 1.08rem);
+  line-height: 1.55;
+  max-width: 100%;
   text-align: center;
-  white-space: nowrap;
+  text-wrap: balance;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .section-services__cta-actions {
