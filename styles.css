@@ -708,6 +708,23 @@ h2 {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+.vision-card.vision-ribbon:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vision-card.vision-ribbon {
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .vision-card.vision-ribbon:hover {
+    transform: none;
+  }
 }
 
 .vision-ribbon__lead {
@@ -765,6 +782,11 @@ h2 {
   border-top: 1px solid #c1a35f;
   text-align: right;
   user-select: none;
+  transition: border-top-color 0.4s ease;
+}
+
+.vision-card.vision-ribbon:hover .vision-signature {
+  border-top-color: #facc15;
 }
 
 .vision-ribbon .vision-signature__name {
@@ -866,23 +888,23 @@ h2 {
 .approach-module__index {
   display: block;
   margin-top: 24px;
-  margin-bottom: 12px;
-  font-family: "Roboto Mono", "JetBrains Mono", ui-monospace, monospace;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: 2px;
+  margin-bottom: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
   color: #d4af37;
 }
 
 .approach-module h3 {
-  margin: 0;
+  margin: 12px 0 0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 19px;
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: 0.5px;
-  color: #f8fafc;
+  color: #ffffff;
 }
 
 .approach-module p {
@@ -1064,10 +1086,10 @@ h2 {
   flex: 0 1 auto;
   min-width: 0;
   text-align: right;
-  font-family: "Roboto Mono", "SF Mono", "SFMono-Regular", ui-monospace, monospace;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
   color: #ffffff;
   text-shadow: none;
   transition: text-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1140,7 +1162,7 @@ h2 {
     max-width: calc(100% - 28px);
     text-align: left;
     font-size: 13px;
-    letter-spacing: 0.04em;
+    letter-spacing: 1px;
     word-break: break-word;
     overflow-wrap: anywhere;
   }
