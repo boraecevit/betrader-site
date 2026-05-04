@@ -34,7 +34,7 @@ const translations = {
       "Piyasadaki büyük sermaye hareketlerini, henüz geniş kitleler tarafından görünür hale gelmeden önce analiz ediyoruz. Amacımız; ana trend belirginleşmeden önce oluşan fırsatları tespit ederek, piyasa üstü yüksek kazanç potansiyeli taşıyan bu içgörüyü kapalı grubumuzdaki üyelerimizle düzenli olarak paylaşmaktır.",
     "services.s2.title": "Algoritmik Sinyal Mimarisi",
     "services.s2.text":
-      "Geliştirdiğimiz indikatör ve algoritmalar, piyasanın matematiksel yapısını okuyarak yüksek olasılıklı işlem bölgelerini belirler. Üyelerimize yoruma açık olmayan, net giriş ve çıkış seviyeleri içeren, tamamen kural tabanlı sinyaller sunarız; stratejiyi ekranda uygulanabilir biçimde netleştiririz.",
+      "Geliştirdiğimiz indikatör ve algoritmalar, piyasanın matematiksel yapısını okuyarak yüksek olasılıklı işlem bölgelerini belirler. Üyelerimize yoruma açık olmayan, net giriş ve çıkış seviyeleri içeren, tamamen kural tabanlı sinyaller sunarız.",
     "services.s3.title": "Terminal ve Kapalı Arşiv Kütüphanesi",
     "services.s3.text":
       "Seçkin üyelerimize özel terminal; ileri seviye analizler, strateji setleri ve algoritmik araçları tek ekranda bir araya getirir. Kapalı arşiv ve BETRADER kütüphanesi ile piyasayı daha doğru okumanızı, gürültüyü filtrelemenizi ve daha kontrollü, disiplinli kararlar almanızı hedefleriz.",
@@ -117,7 +117,7 @@ const translations = {
       "We analyze large capital flows before they become obvious to the broader market. Our aim is to identify opportunities as they emerge—before the primary trend fully asserts itself—and share that market-beating, high-return-potential intelligence on a steady cadence with members of our closed group.",
     "services.s2.title": "Algorithmic Signal Architecture",
     "services.s2.text":
-      "Our proprietary indicators and algorithms read the market's mathematical structure to highlight higher-probability trade zones. Members receive rule-based signals that are not open to interpretation, with clear entry and exit levels—so the strategy stays actionable and explicit on the screen.",
+      "Our proprietary indicators and algorithms read the market's mathematical structure to highlight higher-probability trade zones. Members receive rule-based signals that are not open to interpretation, with clear entry and exit levels.",
     "services.s3.title": "Terminal and Closed Archive Library",
     "services.s3.text":
       "The private terminal brings advanced analytics, strategy sets, and algorithmic tools together in one workspace. The closed archive and BETrader library are designed to help you read the market more accurately, filter noise, and make calmer, more disciplined decisions.",
