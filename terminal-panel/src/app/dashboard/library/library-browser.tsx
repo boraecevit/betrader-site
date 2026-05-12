@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const LibraryPdfViewer = dynamic(
   () => import("./library-pdf-viewer").then((mod) => mod.LibraryPdfViewer),
@@ -37,9 +37,20 @@ export function LibraryBrowser({ presentations }: LibraryBrowserProps) {
   const active = presentations.find((p) => p.id === activeId) ?? null;
   const canShow = active?.src ?? null;
 
+  const viewerAnchorRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!canShow || !viewerAnchorRef.current) return;
+    const el = viewerAnchorRef.current;
+    const t = window.setTimeout(() => {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+    return () => window.clearTimeout(t);
+  }, [activeId, canShow]);
+
   return (
-    <>
-      <section className="panel-card">
+    <div className={canShow ? "library-browser-layout library-browser-layout--split" : "library-browser-layout"}>
+      <section className="panel-card library-list-panel">
         <ul className="file-list library-file-list">
           {presentations.map((item) => {
             const isActive = item.id === activeId;
@@ -67,32 +78,29 @@ export function LibraryBrowser({ presentations }: LibraryBrowserProps) {
       </section>
 
       {canShow ? (
-        <section className="panel-card library-viewer-card" aria-live="polite">
-          <div className="library-viewer-head">
-            <h3 className="library-viewer-title">{active?.title}</h3>
-            <p className="library-viewer-note">
-              {isExternalViewerUrl(canShow)
-                ? "Harici gömülü sunum: indirme ve yazdırma seçenekleri sağlayıcıya bağlıdır."
-                : "Sunum PDF.js ile gösterilir; tarayıcının yerleşik PDF indir çubuğu kullanılmaz. (İleri düzey kullanıcılar ağ sekmesinden dosyaya erişmeye çalışabilir.)"}
-            </p>
-          </div>
-          <div className="library-viewer-shell">
-            {isExternalViewerUrl(canShow) ? (
-              <iframe
-                title={active?.title ?? "Sunum"}
-                src={canShow}
-                className="library-viewer-frame"
-              />
-            ) : (
-              <LibraryPdfViewer src={canShow} title={active?.title ?? "Sunum"} />
-            )}
-          </div>
-        </section>
+        <div ref={viewerAnchorRef} className="library-viewer-wrap">
+          <section className="panel-card library-viewer-card" aria-live="polite">
+            <div className="library-viewer-head">
+              <h3 className="library-viewer-title">{active?.title}</h3>
+            </div>
+            <div className="library-viewer-shell">
+              {isExternalViewerUrl(canShow) ? (
+                <iframe
+                  title={active?.title ?? "Sunum"}
+                  src={canShow}
+                  className="library-viewer-frame"
+                />
+              ) : (
+                <LibraryPdfViewer src={canShow} title={active?.title ?? "Sunum"} />
+              )}
+            </div>
+          </section>
+        </div>
       ) : (
         <section className="panel-card library-empty-viewer">
           <p>Görüntülenecek sunum seçin veya PDF dosyasını <code>public/docs/</code> altına ekleyip listeyi güncelleyin.</p>
         </section>
       )}
-    </>
+    </div>
   );
 }
