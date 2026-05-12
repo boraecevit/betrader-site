@@ -18,7 +18,6 @@ function isExternalViewerUrl(src: string) {
 export type LibraryPresentation = {
   id: string;
   title: string;
-  type: string;
   /** Same-origin path (/docs/...) or a trusted embed URL (e.g. Google Slides /embed) */
   src: string | null;
 };
@@ -59,7 +58,6 @@ export function LibraryBrowser({ presentations }: LibraryBrowserProps) {
               <li key={item.id} className={isActive ? "library-file-row active" : "library-file-row"}>
                 <div>
                   <strong>{item.title}</strong>
-                  <p style={{ marginTop: 6 }}>{item.type}</p>
                 </div>
                 <button
                   type="button"
@@ -80,20 +78,24 @@ export function LibraryBrowser({ presentations }: LibraryBrowserProps) {
       {canShow ? (
         <div ref={viewerAnchorRef} className="library-viewer-wrap">
           <section className="panel-card library-viewer-card" aria-live="polite">
-            <div className="library-viewer-head">
-              <h3 className="library-viewer-title">{active?.title}</h3>
-            </div>
-            <div className="library-viewer-shell">
-              {isExternalViewerUrl(canShow) ? (
-                <iframe
-                  title={active?.title ?? "Sunum"}
-                  src={canShow}
-                  className="library-viewer-frame"
-                />
-              ) : (
+            {isExternalViewerUrl(canShow) ? (
+              <>
+                <div className="library-viewer-head">
+                  <h3 className="library-viewer-title">{active?.title}</h3>
+                </div>
+                <div className="library-viewer-shell">
+                  <iframe
+                    title={active?.title ?? "Sunum"}
+                    src={canShow}
+                    className="library-viewer-frame"
+                  />
+                </div>
+              </>
+            ) : (
+              <div className="library-viewer-shell library-viewer-shell--pdf">
                 <LibraryPdfViewer src={canShow} title={active?.title ?? "Sunum"} />
-              )}
-            </div>
+              </div>
+            )}
           </section>
         </div>
       ) : (

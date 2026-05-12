@@ -11,6 +11,11 @@ DOCS = ROOT / "public" / "docs"
 ZIP_PATH = Path(r"c:\Users\PC\Downloads\Sunumlar_PDF.zip")
 OUT_TS = ROOT / "src" / "app" / "dashboard" / "library" / "library-presentations.ts"
 
+# Dosya adından türetilen başlık yetersizse (yeniden içe aktarımda korunur)
+DISPLAY_TITLE_OVERRIDES: dict[str, str] = {
+    "Cci.pdf": "CCI",
+}
+
 
 def slug_id(idx: int) -> str:
     return f"sunum-{idx:03d}"
@@ -52,21 +57,21 @@ def main() -> None:
     if not betrader.is_file():
         raise SystemExit("Missing BETrader-ALGO-V6-Terminali.pdf — add it to public/docs")
 
-    entries: list[tuple[str, str, str, str]] = []
+    entries: list[tuple[str, str, str]] = []
     entries.append(
         (
             "betrader-algo-v6",
             "Bora Ecevit — BETrader ALGO & V6 Terminali",
-            "Terminal dokümanı (12 sayfa)",
             "/docs/BETrader-ALGO-V6-Terminali.pdf",
         )
     )
 
     for i, name in enumerate(names, start=1):
-        title = name[:-4] if name.lower().endswith(".pdf") else name
+        base_title = name[:-4] if name.lower().endswith(".pdf") else name
+        title = DISPLAY_TITLE_OVERRIDES.get(name, base_title)
         safe = quote(name, safe="")
         src = f"/docs/{safe}"
-        entries.append((slug_id(i), title, "PDF sunum", src))
+        entries.append((slug_id(i), title, src))
 
     lines = [
         'import type { LibraryPresentation } from "./library-browser";',
@@ -74,9 +79,9 @@ def main() -> None:
         "/** Otomatik: Sunumlar_PDF.zip + BETrader. Dosya adları orijinaldir. */",
         "export const libraryPresentations: LibraryPresentation[] = [",
     ]
-    for eid, title, typ, src in entries:
+    for eid, title, src in entries:
         lines.append(
-            f"  {{ id: {ts_escape(eid)}, title: {ts_escape(title)}, type: {ts_escape(typ)}, src: {ts_escape(src)} }},"
+            f"  {{ id: {ts_escape(eid)}, title: {ts_escape(title)}, src: {ts_escape(src)} }},"
         )
     lines.append("];")
     lines.append("")
