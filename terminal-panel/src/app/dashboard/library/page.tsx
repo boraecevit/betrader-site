@@ -1,17 +1,35 @@
+import type { LibraryPresentation } from "./library-browser";
+import { LibraryBrowser } from "./library-browser";
+
 export const metadata = {
   title: "Strateji Kütüphanesi"
 };
 
-const files = [
+const presentations: LibraryPresentation[] = [
   {
-    name: "Bora Ecevit - BETrader ALGO & V6 Terminali.pdf",
-    type: "Terminal Dokümanı (12 Sayfa)",
-    access: "Üye",
-    href: "/docs/BETrader-ALGO-V6-Terminali.pdf"
+    id: "betrader-algo-v6",
+    title: "Bora Ecevit — BETrader ALGO & V6 Terminali",
+    type: "Terminal dokümanı (12 sayfa)",
+    src: "/docs/BETrader-ALGO-V6-Terminali.pdf"
   },
-  { name: "İleri Teknik Analiz Çatısı.pdf", type: "PDF Sunum", access: "Üye", href: "#" },
-  { name: "Dr. Emmett \"Doc\" Brown Cup Formasyonu.pdf", type: "Formasyon Dokümanı", access: "Üye", href: "#" },
-  { name: "Likidite Haritası ve Mikroyapı Notları.pdf", type: "Araştırma Notu", access: "Üye", href: "#" }
+  {
+    id: "ileri-teknik",
+    title: "İleri Teknik Analiz Çatısı",
+    type: "PDF sunum",
+    src: null
+  },
+  {
+    id: "doc-brown-cup",
+    title: "Dr. Emmett \"Doc\" Brown Cup Formasyonu",
+    type: "Formasyon dokümanı",
+    src: null
+  },
+  {
+    id: "likidite-haritasi",
+    title: "Likidite Haritası ve Mikroyapı Notları",
+    type: "Araştırma notu",
+    src: null
+  }
 ];
 
 export default function LibraryPage() {
@@ -20,25 +38,13 @@ export default function LibraryPage() {
       <section className="panel-card">
         <h3>Strateji Kütüphanesi</h3>
         <p>
-          İleri düzey teknik analiz sunumları, özel formasyon dokümanları ve premium
-          arşiv içerikleri burada listelenir.
+          İleri düzey teknik analiz sunumları, özel formasyon dokümanları ve premium arşiv
+          içerikleri burada listelenir. Sunumlar sayfa içinde açılır; dosyaları{" "}
+          <code>terminal-panel/public/docs/</code> klasörüne koyup aşağıdaki listeyi
+          güncellemeniz yeterlidir.
         </p>
       </section>
-      <section className="panel-card">
-        <ul className="file-list">
-          {files.map((file) => (
-            <li key={file.name}>
-              <div>
-                <strong>{file.name}</strong>
-                <p style={{ marginTop: 6 }}>{file.type}</p>
-              </div>
-              <a className="copy-btn" href={file.href} target="_blank" rel="noopener noreferrer">
-                {file.access} İndir
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <LibraryBrowser presentations={presentations} />
     </>
   );
 }
